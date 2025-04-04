@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37px" height="53px" viewBox="0 0 37 53" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image7" width="37" height="53" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAA1CAYAAADGSCKYAAAABmJLR0QA/wD/AP+gvaeTAAAAzklEQVRYhe3ZoQ0CMRjF8dfrgSVBoLBMgsCSMANMwBoILCuAYAMcCQnmtsDdAFf4UNwp4DWQtOL9VUW/5pc0qamz4A2ZVXbL+Q022iSTuHoC7FcAAAveLHiz5lAlAwGwppq+LEVKyLuEYhOKTSi27vF027GFxS5q+nG8uv49biYKhfMQwDJquugNgP+jsrw+odiEYhOKTSg2odiEYhOKTSg2odiEYhOKTSg2odiEYhOKTSg2odiEYhOKrfy+5UO2Luw0++2Mtkt7jsvxD/kJeqIsxaSs0d0AAAAASUVORK5CYII="/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image7"/>
+  </g>
+</mask>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="37" height="53"/>
+</clipPath>
+<g id="surface6" clip-path="url(#clip1)">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 2.820312 10.394531 L 0.871094 10.394531 L 0.871094 11.414062 L 2.820312 11.414062 Z M 2.820312 1.457031 L 2.820312 0.4375 L 0.871094 0.4375 L 0.871094 1.457031 Z M 34.734375 1.457031 L 36.679688 1.457031 L 36.679688 0.4375 L 34.734375 0.4375 Z M 34.734375 51.980469 L 34.734375 53 L 36.679688 53 L 36.679688 51.980469 Z M 15.664062 51.980469 L 13.71875 51.980469 L 13.71875 53 L 15.664062 53 Z M 15.664062 10.394531 L 17.613281 10.394531 L 17.613281 9.375 L 15.664062 9.375 Z M 4.765625 10.394531 L 4.765625 1.457031 L 0.871094 1.457031 L 0.871094 10.394531 Z M 2.820312 2.476562 L 34.734375 2.476562 L 34.734375 0.4375 L 2.820312 0.4375 Z M 32.785156 1.457031 L 32.785156 51.980469 L 36.679688 51.980469 L 36.679688 1.457031 Z M 34.734375 50.960938 L 15.664062 50.960938 L 15.664062 53 L 34.734375 53 Z M 17.613281 51.980469 L 17.613281 10.394531 L 13.71875 10.394531 L 13.71875 51.980469 Z M 15.664062 9.375 L 2.820312 9.375 L 2.820312 11.414062 L 15.664062 11.414062 Z M 15.664062 9.375 "/>
+</g>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface6" mask="url(#mask0)"/>
+</g>
+</svg>

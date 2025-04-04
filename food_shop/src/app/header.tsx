@@ -4,9 +4,9 @@ export default function Header() {
   return (
     <div className="w-full h-16 flex flex-row justify-between p-6 items-end mt-4">
       <div>
-        <Image src="/LOGO 1.svg" height={53} width={215} alt="Logo" />
+        <Image src="/LOGO 1.svg" height={50} width={215} alt="Logo" />
       </div>
-      <ul className="flex flex-row justify-between w-4xl items-end">
+      <ul className="flex flex-row justify-between w-[1000px] items-end gap-6">
         <li>
           <a href="#" className={CLASSNAME.HEADER_TEXT}>
             Home
@@ -29,8 +29,14 @@ export default function Header() {
         </li>
         <li>
           <a href="#" className={CLASSNAME.HEADER_BUTTON}>
-            <div className="flex flex-row items-end">
-              <Image src="/Male User.svg" height={27} width={31} alt="Logo" />
+            <div className="flex flex-row items-center">
+              <Image
+                src="/Male User.svg"
+                height={27}
+                width={31}
+                alt="Logo"
+                className="-ml-2 mr-2"
+              />
               Login/Sign up
             </div>
           </a>
