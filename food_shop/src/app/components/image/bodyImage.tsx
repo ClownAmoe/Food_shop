@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Order from "./order";
+import Order from "../order/order";
+import Button from "../button/button";
 export default function BodyImage() {
   return (
     <div className="rounded-2xl m-auto h-[610px] w-[1510px] bg-[url('/Rectangle 2.png')] border-gray-400 border-2 shadow-2xl flex flex-row justify-between mt-[25px]">
@@ -12,20 +13,19 @@ export default function BodyImage() {
         <label htmlFor="search" className="text-[13px] text-[#03081F]">
           Enter a postcode to see what we deliver
         </label>
-        <p className="h-[50px] relative">
+        <div className="h-[50px] relative flex flex-row justify-center items-center">
           <input
             type="text"
             id="search"
             placeholder="e.g. EC4R 3TE"
             className="border-gray-400 border-[1px] rounded-4xl h-[50px] w-[300px] mt-2 text-md pl-4"
           />
-          <button
-            type="submit"
-            className="bg-amber-500 h-[51px] w-[133px] rounded-4xl -ml-16"
-          >
-            Search
-          </button>
-        </p>
+          <div className="h-full w-[200px] mt-2 -ml-5 z-100">
+            <Button typeOfButton="submit" variation="submit">
+              Search
+            </Button>
+          </div>
+        </div>
       </div>
       <div className="flex items-end justify-center h-full">
         <Image

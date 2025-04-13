@@ -1,4 +1,4 @@
-import BodyImage from "./bodyImage";
+import BodyImage from "../components/image/bodyImage";
 
 export default function Body() {
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Header from "./header";
-import Body from "./body";
+import Header from "./components/header/header";
+import Body from "./picture/page";
 
 export default function Home() {
   return (
