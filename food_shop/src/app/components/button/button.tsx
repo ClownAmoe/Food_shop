@@ -1,4 +1,4 @@
-import { ButtonProps, props } from "./buttonProps";
+import { ButtonProps } from "./buttonProps";
 import { CLASSNAME } from "./classname";
 import Image from "next/image";
 export default function Button({

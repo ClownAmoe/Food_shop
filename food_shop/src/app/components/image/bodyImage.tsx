@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Order from "../order/order";
 import Button from "../button/button";
+import Input from "../input/input";
 export default function BodyImage() {
   return (
     <div className="rounded-2xl m-auto h-[610px] w-[1510px] bg-[url('/Rectangle 2.png')] border-gray-400 border-2 shadow-2xl flex flex-row justify-between mt-[25px]">
@@ -14,12 +15,7 @@ export default function BodyImage() {
           Enter a postcode to see what we deliver
         </label>
         <div className="h-[50px] relative flex flex-row justify-center items-center">
-          <input
-            type="text"
-            id="search"
-            placeholder="e.g. EC4R 3TE"
-            className="border-gray-400 border-[1px] rounded-4xl h-[50px] w-[300px] mt-2 text-md pl-4"
-          />
+          <Input type="text" variant="Search" placeholder="e.g. EC4R 3TE" />
           <div className="h-full w-[200px] mt-2 -ml-5 z-100">
             <Button typeOfButton="submit" variation="submit">
               Search
@@ -29,7 +25,7 @@ export default function BodyImage() {
       </div>
       <div className="flex items-end justify-center h-full">
         <Image
-          src="/Eating1.svg"
+          src="/picture/Eating1.svg"
           width={805}
           height={537}
           alt="eating"
@@ -38,7 +34,7 @@ export default function BodyImage() {
       </div>
       <div className="flex flex-col justify-end h-full relative">
         <Image
-          src="/Eating2.svg"
+          src="/picture/Eating2.svg"
           width={377}
           height={455}
           alt="eating"
@@ -46,7 +42,7 @@ export default function BodyImage() {
         />
 
         <Image
-          src="/image 1.png"
+          src="/picture/image 1.png"
           width={626}
           height={805}
           alt="eating"
@@ -57,21 +53,21 @@ export default function BodyImage() {
         <Order
           title="We’ve Received your order!"
           text="Awaiting Restaurant acceptance"
-          path="/1 (2).svg"
+          path="picture/1 (2).svg"
         />
       </span>
       <span className="absolute z-50 right-12 top-[370px] h-[150px]">
         <Order
           title="Order Accepted!"
           text="Your order will be delivered shortly"
-          path="/2.svg"
+          path="/picture/2.svg"
         />
       </span>
       <span className="absolute z-50 right-20 top-[530px] h-[150px]">
         <Order
           title="Your rider is nearby!"
           text="They're almost there get ready!"
-          path="/3.svg"
+          path="/picture/3.svg"
         />
       </span>
     </div>

@@ -21,7 +21,7 @@ export default function Order({ title, text, path }: OrderProps) {
       </div>
       <div className="h-[90px] w-[390px] bg-white p-3 absolute rounded-lg">
         <div className="flex flex-row justify-between">
-          <Image src="/LOGO 1.svg" width={58} height={15} alt="logo" />
+          <Image src="header/LOGO.svg" width={58} height={15} alt="logo" />
           <p className="text-gray-400">now</p>
         </div>
         <p className="text-lg font-semibold">{title}</p>

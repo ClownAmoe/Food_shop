@@ -7,7 +7,3 @@ export type ButtonProps = {
   image?: string;
   variation: string;
 };
-
-export type props = {
-  btn: ButtonProps;
-};
