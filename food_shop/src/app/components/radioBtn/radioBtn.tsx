@@ -1,7 +1,7 @@
 import { Radio } from "./type";
 import { CLASSNAME } from "./classname";
 
-export default function RadioBtn({ role, onChange }: Radio) {
+export default function RadioBtn({ role, onChange, checked }: Radio) {
   return (
     <div>
       <input
@@ -11,6 +11,7 @@ export default function RadioBtn({ role, onChange }: Radio) {
         value={role}
         onChange={(e) => onChange(e.target.value)}
         className={CLASSNAME.DEFAULT}
+        checked={checked}
       />
       <label htmlFor={role} className={CLASSNAME.LABEL}>
         {role}

@@ -1,9 +1,9 @@
-import { arrProp, objProp } from "./type";
+import { arrProp } from "./type";
 import RestaurantCard from "../restaurontCard/restaurantCard";
 export default function Restaurants({ arr }: arrProp) {
   return (
     <div>
-      <div className="grid grid-rows-3 grid-cols-3 gap-2 mt-10">
+      <div className="grid  grid-cols-3 gap-2 mt-10 h-auto">
         {arr.map((e) => {
           return (
             <RestaurantCard
