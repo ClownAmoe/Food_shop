@@ -1,4 +1,4 @@
-import Filter from "../filter/filter";
+import Filter from "../chooseRest";
 
 export default function Exclusive() {
   return (

@@ -1,5 +1,6 @@
 export type RestCardProps = {
-  img: string;
+  img?: string;
   mainText: string;
   percent: string;
+  role: string;
 };

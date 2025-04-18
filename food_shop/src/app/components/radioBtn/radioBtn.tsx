@@ -1,13 +1,7 @@
-"use client";
-import { useState } from "react";
 import { Radio } from "./type";
 import { CLASSNAME } from "./classname";
 
-export default function RadioBtn({ role }: Radio) {
-  const [selectedRole, setSelectedRole] = useState("");
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedRole(e.target.value);
-  };
+export default function RadioBtn({ role, onChange }: Radio) {
   return (
     <div>
       <input
@@ -15,7 +9,7 @@ export default function RadioBtn({ role }: Radio) {
         id={role}
         name="role"
         value={role}
-        onChange={handleChange}
+        onChange={(e) => onChange(e.target.value)}
         className={CLASSNAME.DEFAULT}
       />
       <label htmlFor={role} className={CLASSNAME.LABEL}>
