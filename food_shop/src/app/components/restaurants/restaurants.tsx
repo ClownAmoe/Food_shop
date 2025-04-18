@@ -1,21 +1,36 @@
 import { arrProp } from "./type";
 import RestaurantCard from "../restaurontCard/restaurantCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+
 export default function Restaurants({ arr }: arrProp) {
   return (
-    <div>
-      <div className="grid  grid-cols-3 gap-2 mt-10 h-auto">
+    <div className="w-full">
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        navigation={true}
+        modules={[Navigation]}
+        breakpoints={{
+          768: { slidesPerView: 3 },
+          480: { slidesPerView: 1 },
+        }}
+      >
         {arr.map((e) => {
           return (
-            <RestaurantCard
-              mainText={e.name}
-              percent={e.percent}
-              role={e.role}
-              img={e.image}
-              key={e.name}
-            />
+            <SwiperSlide key={e.name}>
+              <RestaurantCard
+                mainText={e.name}
+                percent={e.percent}
+                role={e.role}
+                img={e.image}
+              />
+            </SwiperSlide>
           );
         })}
-      </div>
+      </Swiper>
     </div>
   );
 }

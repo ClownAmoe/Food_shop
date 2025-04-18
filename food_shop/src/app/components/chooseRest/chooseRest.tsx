@@ -41,7 +41,7 @@ export default function ChooseRest() {
         </ul>
       </div>
 
-      <div className="mt-6">
+      <div className="mt-6 ml-2 mr-auto">
         <Restaurants arr={filteredRests} />
       </div>
     </div>
