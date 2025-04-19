@@ -1,4 +1,4 @@
-import CategCard from "../categCard/categCard";
+import MiniCard from "../miniCard/miniCard";
 import { cates } from "./cates";
 
 export default function Categories() {
@@ -8,7 +8,13 @@ export default function Categories() {
       <div className="flex flex-row justify-between mt-12">
         {cates.map((e) => {
           return (
-            <CategCard name={e.name} img={e.img} rest={e.rest} key={e.name} />
+            <MiniCard
+              name={e.name}
+              img={e.img}
+              rest={e.rest}
+              key={e.name}
+              type="Category"
+            />
           );
         })}
       </div>
