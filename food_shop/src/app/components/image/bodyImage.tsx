@@ -4,7 +4,7 @@ import Button from "../button/button";
 import Input from "../input/input";
 export default function BodyImage() {
   return (
-    <div className="rounded-2xl m-auto h-[610px] w-[1510px] bg-[url('/Rectangle 2.png')] border-gray-400 border-2 shadow-2xl flex flex-row justify-between mt-[25px]">
+    <div className="rounded-2xl m-auto h-[610px] w-[1510px] bg-gradient-to-r from-[#EEEEEE] to-[#E0E1DC] border-gray-400 border-2 shadow-2xl flex flex-row justify-between mt-[25px]">
       <div className="ml-[57px] items-left justify-center flex flex-col text-lg h-full">
         <p className="text-[16px] text-[#03081F]">
           Order Restarant food, takeaway and groceries.
@@ -46,7 +46,7 @@ export default function BodyImage() {
           width={626}
           height={805}
           alt="eating"
-          className="absoulute -z-50"
+          className="absoulute z-0"
         />
       </div>
       <span className="absolute z-50 right-35 top-[190px] h-[150px]">
