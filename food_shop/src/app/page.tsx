@@ -7,7 +7,7 @@ import Mobile from "./sections/mobile/page";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="w-full">
       <Header />
       <Picture />
       <Restaurant />

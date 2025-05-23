@@ -8,7 +8,7 @@ export default function RestaurantCard({
 }: RestCardProps) {
   return (
     <div
-      className="flex flex-col justify-around w-[475px] h-[300px] bg-no-repeat bg-cover bg-center rounded-2xl relative text-white z-10 cursor-pointer transition-all"
+      className="flex flex-col justify-around w-full md:w-[475px] h-[300px] bg-no-repeat bg-cover bg-center rounded-2xl relative text-white z-10 cursor-pointer transition-all"
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black via-gray to-transparent z-0 rounded-xl hover:from-gray-500 transition-all duration-300">

@@ -5,6 +5,7 @@ body {
   color: var(--foreground);
   font-family: Poppins, Helvetica, sans-serif;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
   color: #fc8a06;

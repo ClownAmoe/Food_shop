@@ -15,7 +15,7 @@ export default function Restaurants({ arr }: arrProp) {
         modules={[Navigation]}
         breakpoints={{
           768: { slidesPerView: 3 },
-          480: { slidesPerView: 1 },
+          300: { slidesPerView: 1 },
         }}
       >
         {arr.map((e) => {

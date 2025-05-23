@@ -2,14 +2,14 @@ import Image from "next/image";
 import Button from "../button/button";
 export default function MobileImg() {
   return (
-    <div className="rounded-2xl m-auto h-[610px] w-[1510px] bg-gradient-to-r from-[#EEEEEE] to-[#E0E1DC] border-gray-400 border-2 shadow-2xl flex flex-row justify-between mt-24">
+    <div className="rounded-2xl m-auto h-[610px] w-full md:w-[1510px] bg-gradient-to-r from-[#EEEEEE] to-[#E0E1DC] border-gray-400 border-2 shadow-2xl flex flex-col-reverse md:flex-row justify-between mt-24">
       <div className="items-left justify-center flex flex-col text-lg h-full w-full">
         <Image
           src="/mobile/mobile.png"
           width={832}
           height={651}
           alt="people"
-          className="mb-10 ml-2 absolute z-10"
+          className="mb-10 md:ml-2 absolute z-10"
         />
         <Image
           src="/mobile/mobile.png"
@@ -22,12 +22,12 @@ export default function MobileImg() {
       <div className="flex items-center justify-start w-full flex-col mt-36">
         <div className="flex flex-row items-center justify-center">
           <Image src="header/LOGO.svg" width={268} height={66} alt="logo" />
-          <p className="text-[68px] font-bold mt-3">ing is more</p>
+          <p className="md:text-[68px] text-4xl font-bold mt-3">ing is more</p>
         </div>
-        <div className="ml-[-100px] inline-block">
-          <p className="inline-block bg-[#03081F] text-5xl text-right rounded-full py-4 px-30 ml-2">
+        <div className="md:ml-[-100px] inline-block">
+          <p className="inline-block text-3xl md:bg-[#03081F] md:text-5xl text-center text-nowrap rounded-full py-4 md:px-30 ml-2">
             <span className="underline text-[#FC8A06]">Personalised</span>
-            <span className="text-white"> & Instant</span>
+            <span className="text-black md:text-white"> & Instant</span>
           </p>
         </div>
         <p className="text-2xl mt-6">
