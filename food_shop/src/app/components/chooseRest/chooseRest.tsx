@@ -27,8 +27,8 @@ export default function ChooseRest() {
   return (
     <div>
       <div className="flex flex-col md:flex-row justify-between gap-8 items-center mt-10 w-full">
-        <p className="text-3xl">Up to -40% 🎊 Order.uk exclusive deals</p>
-        <ul className="flex flex-row justify-end gap-0 md:gap-8 w-full text-sm">
+        <p className="text-3xl ml-2">Up to -40% 🎊 Order.uk exclusive deals</p>
+        <ul className="flex flex-row justify-center md:justify-end gap-0 md:gap-8 w-full text-sm">
           {roles.map((role) => (
             <li key={role}>
               <RadioBtn

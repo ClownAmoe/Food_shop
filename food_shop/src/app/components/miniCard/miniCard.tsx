@@ -16,7 +16,7 @@ export default function MiniCard({ name, img, rest, type }: miniProp) {
   }
   return (
     <div className="hover:ring-[#FC8A06] hover:ring-2 transition-all z-10 rounded-xl hover:scale-105 -ring-offset-[4px] ring-gray-300 ring-2">
-      <div className="w-60 rounded-xl hover:cursor-pointer">
+      <div className="w-full md:w-60 rounded-xl hover:cursor-pointer">
         <div className="">
           <Image
             width={239}
