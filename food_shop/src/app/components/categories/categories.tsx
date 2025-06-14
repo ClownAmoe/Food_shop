@@ -3,18 +3,20 @@ import { cates } from "./cates";
 
 export default function Categories() {
   return (
-    <div className="mt-16 ml-2 mr-2">
+    <div className="mt-16 w-full pl-2 pr-2">
       <h1 className="text-3xl">Order.uk Popular Categories 🤩</h1>
-      <div className="flex flex-col gap-8 md:gap-3 w-full md:w-min md:flex-row md:justify-between mt-12">
+      <div className="flex flex-wrap justify-around gap-8 md:gap-3 w-full md:flex-nowrap md:w-min md:flex-row md:justify-between mt-12">
         {cates.map((e) => {
           return (
-            <MiniCard
-              name={e.name}
-              img={e.img}
-              rest={e.rest}
-              key={e.name}
-              type="Category"
-            />
+            <span className="w-[190px] md:w-full" key={e.name}>
+              <MiniCard
+                name={e.name}
+                img={e.img}
+                rest={e.rest}
+                key={e.name}
+                type="Category"
+              />
+            </span>
           );
         })}
       </div>

@@ -3,7 +3,7 @@ import Button from "../button/button";
 export default function MobileImg() {
   return (
     <div className="h-[350px] p-4 rounded-2xl m-auto md:h-[610px] w-full md:w-[1510px] bg-gradient-to-r from-[#EEEEEE] to-[#E0E1DC] border-gray-400 border-2 shadow-2xl flex flex-col-reverse md:flex-row justify-between mt-24">
-      <div className="items-left justify-center md:flex flex-col text-lg h-full w-full hidden">
+      <div className="items-left -ml-5 md:ml-0 justify-center md:flex flex-col text-lg h-full w-full">
         <Image
           src="/mobile/mobile.png"
           width={832}
