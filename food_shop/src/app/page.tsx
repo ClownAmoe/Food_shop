@@ -4,6 +4,7 @@ import Restaurant from "./sections/restaurants/page";
 import CategoriesSection from "./sections/catrgories/page";
 import Popular from "./sections/popular/page";
 import Mobile from "./sections/mobile/page";
+import PartnersPage from "./sections/partnersPage/page";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <CategoriesSection />
       <Popular />
       <Mobile />
+      <PartnersPage />
     </div>
   );
 }
