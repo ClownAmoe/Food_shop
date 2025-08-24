@@ -1,8 +1,11 @@
 "use client";
+
 import { useEffect, useState } from "react";
-import { rests } from "./rests";
+
 import RadioBtn from "../radioBtn/radioBtn";
 import Restaurants from "../restaurants/restaurants";
+
+import { rests } from "./rests";
 import { objProp } from "../restaurants/type";
 
 export default function ChooseRest() {

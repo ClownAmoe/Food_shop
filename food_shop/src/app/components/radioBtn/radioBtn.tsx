@@ -1,4 +1,5 @@
 import { Radio } from "./type";
+
 import { CLASSNAME } from "./classname";
 
 export default function RadioBtn({ role, onChange, checked }: Radio) {

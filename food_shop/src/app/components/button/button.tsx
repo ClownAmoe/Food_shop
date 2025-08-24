@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 import { ButtonProps } from "./buttonProps";
 import { CLASSNAME } from "./classname";
-import Image from "next/image";
+
 export default function Button({
   children,
   click,

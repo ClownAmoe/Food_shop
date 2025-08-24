@@ -1,6 +1,9 @@
 import Image from "next/image";
-import { CLASSNAME } from "./CLASSNAME";
+
 import Button from "../button/button";
+
+import { CLASSNAME } from "./CLASSNAME";
+
 export default function Header() {
   return (
     <div className="w-full h-16 flex flex-row justify-between p-6 items-end mt-4">

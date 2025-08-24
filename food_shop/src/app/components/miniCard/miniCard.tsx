@@ -1,6 +1,8 @@
+import Image from "next/image";
+
 import { CLASSNAME } from "./classname";
 import { miniProp } from "./type";
-import Image from "next/image";
+
 export default function MiniCard({ name, img, rest, type }: miniProp) {
   let style1 = "";
   let style2 = "";

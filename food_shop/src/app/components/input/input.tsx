@@ -1,5 +1,6 @@
 import { CLASSNAME } from "./classname";
 import { inputProps } from "./type";
+
 export default function Input({
   change,
   placeholder,

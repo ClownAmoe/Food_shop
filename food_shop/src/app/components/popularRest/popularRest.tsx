@@ -1,4 +1,5 @@
 import MiniCard from "../miniCard/miniCard";
+
 import { restaurants } from "./popular";
 
 export default function PopularRest() {

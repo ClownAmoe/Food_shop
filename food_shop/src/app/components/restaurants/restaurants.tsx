@@ -1,9 +1,11 @@
-import { arrProp } from "./type";
-import RestaurantCard from "../restaurontCard/restaurantCard";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
+import "swiper/css/navigation";
+import "swiper/css";
+
+import RestaurantCard from "../restaurontCard/restaurantCard";
+
+import { arrProp } from "./type";
 
 export default function Restaurants({ arr }: arrProp) {
   return (

@@ -1,7 +1,9 @@
 import Image from "next/image";
+
 import Order from "../order/order";
 import Button from "../button/button";
 import Input from "../input/input";
+
 export default function BodyImage() {
   return (
     <div className="rounded-2xl m-auto h-[350px] py-5 md:py-0 md:h-[610px] w-full md:max-w-[1510px] bg-gradient-to-r from-[#EEEEEE] to-[#E0E1DC] border-gray-400 border-2 shadow-2xl flex flex-row justify-between mt-[25px]">
