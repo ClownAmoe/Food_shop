@@ -1,9 +1,9 @@
-import Filter from "../chooseRest";
+// import Filter from "../chooseRest";
 
-export default function Exclusive() {
-  return (
-    <div>
-      <Filter />
-    </div>
-  );
-}
+// export default function Exclusive() {
+//   return (
+//     <div>
+//       <Filter />
+//     </div>
+//   );
+// }

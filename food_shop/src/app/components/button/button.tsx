@@ -20,7 +20,7 @@ export default function Button({
     {
       if (image !== undefined) {
         return (
-          <div className="flex flex-row justify-between gap-2 items-center">
+          <div className={CLASSNAME.WRAPPER}>
             <Image
               src={image}
               width={25}

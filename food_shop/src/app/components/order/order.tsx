@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { CLASSNAME } from "./classname";
+
 interface OrderProps {
   title: string;
   text: string;
@@ -8,24 +10,24 @@ interface OrderProps {
 
 export default function Order({ title, text, path }: OrderProps) {
   return (
-    <div className="relative h-full w-[390px] right-0">
-      <div className="relative h-[102px] w-full -mb-17">
+    <div className={CLASSNAME.WRAPPER}>
+      <div className={CLASSNAME.IMG_CONTAINER}>
         <Image
           layout="intrinsic"
           src={path}
           width={25}
           height={102}
           alt="number"
-          className="absolute right-0 top-0"
+          className={CLASSNAME.IMG}
         />
       </div>
-      <div className="h-[90px] w-[390px] bg-white p-3 absolute rounded-lg">
-        <div className="flex flex-row justify-between">
+      <div className={CLASSNAME.CONTAINER}>
+        <div className={CLASSNAME.FLEX}>
           <Image src="header/LOGO.svg" width={58} height={15} alt="logo" />
-          <p className="text-gray-400">now</p>
+          <p className={CLASSNAME.PARAGRAPH}>now</p>
         </div>
-        <p className="text-lg font-semibold">{title}</p>
-        <p className="text-sm text-gray-600">{text}</p>
+        <p className={CLASSNAME.LG_PARAGRAPH}>{title}</p>
+        <p className={CLASSNAME.SM_PARAGRAPH}>{text}</p>
       </div>
     </div>
   );

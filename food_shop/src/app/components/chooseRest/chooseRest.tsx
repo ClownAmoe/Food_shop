@@ -7,6 +7,7 @@ import Restaurants from "../restaurants/restaurants";
 
 import { rests } from "./rests";
 import { objProp } from "../restaurants/type";
+import { CLASSNAME } from "./classname";
 
 export default function ChooseRest() {
   const roles = ["All", "Vegan", "Sushi", "Pizza & Fast food", "Others"];
@@ -29,9 +30,11 @@ export default function ChooseRest() {
 
   return (
     <div>
-      <div className="flex flex-col md:flex-row justify-between gap-8 items-center mt-10 w-full">
-        <p className="text-3xl ml-2">Up to -40% 🎊 Order.uk exclusive deals</p>
-        <ul className="flex flex-row justify-center md:justify-end gap-0 md:gap-8 w-full text-sm">
+      <div className={CLASSNAME.WRAPPER}>
+        <p className={CLASSNAME.PARAGRAPH}>
+          Up to -40% 🎊 Order.uk exclusive deals
+        </p>
+        <ul className={CLASSNAME.CONTAINER}>
           {roles.map((role) => (
             <li key={role}>
               <RadioBtn
@@ -44,7 +47,7 @@ export default function ChooseRest() {
         </ul>
       </div>
 
-      <div className="mt-6 md:ml-2 mr-auto">
+      <div className={CLASSNAME.RESTAURANT_WRAPPER}>
         <Restaurants arr={filteredRests} />
       </div>
     </div>

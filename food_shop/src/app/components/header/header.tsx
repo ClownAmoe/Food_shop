@@ -6,11 +6,11 @@ import { CLASSNAME } from "./CLASSNAME";
 
 export default function Header() {
   return (
-    <div className="w-full h-16 flex flex-row justify-between p-6 items-end mt-4">
-      <div className="flex items-center justify-center w-full md:block md:w-auto">
+    <div className={CLASSNAME.WRAPPER}>
+      <div className={CLASSNAME.IMG_WRAPPER}>
         <Image src="/header/LOGO.svg" height={50} width={215} alt="Logo" />
       </div>
-      <ul className="md:flex flex-row justify-between w-full hidden md:w-[1000px] items-end gap-6">
+      <ul className={CLASSNAME.NAVBAR}>
         <li>
           <a href="#" className={CLASSNAME.HEADER_TEXT}>
             Home
@@ -31,7 +31,7 @@ export default function Header() {
             Track Order
           </a>
         </li>
-        <li className="h-full w-[130px]">
+        <li className={CLASSNAME.BUTTON_WRAPPER}>
           <Button
             typeOfButton="submit"
             variation="login"

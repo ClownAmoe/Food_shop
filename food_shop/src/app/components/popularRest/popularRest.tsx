@@ -1,12 +1,13 @@
 import MiniCard from "../miniCard/miniCard";
+import { CLASSNAME } from "./classname";
 
 import { restaurants } from "./popular";
 
 export default function PopularRest() {
   return (
-    <div className="mt-16 ml-2 mr-2 ">
-      <h1 className="text-3xl">Popular Restaurants</h1>
-      <div className="flex flex-col justify-center md:flex-row md:justify-between mt-10 gap-8 md:gap-1">
+    <div className={CLASSNAME.WRAPPER}>
+      <h1 className={CLASSNAME.TITLE}>Popular Restaurants</h1>
+      <div className={CLASSNAME.CONTAINER}>
         {restaurants.map((e) => {
           return (
             <MiniCard
