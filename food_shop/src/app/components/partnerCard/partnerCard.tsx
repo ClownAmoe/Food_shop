@@ -1,5 +1,8 @@
 import Image from "next/image";
+
 import Button from "../button/button";
+
+import { CLASSNAME } from "./classname";
 
 export default function PartnerCard({
   src,
@@ -8,23 +11,21 @@ export default function PartnerCard({
   profit,
 }: PartnerCardProps) {
   return (
-    <div className="w-full h-full md:w-1/2 bg-red md:h-[425px] rounded-2xl relative bg-gradient-to-tr from-black via-gray to-transparent">
+    <div className={CLASSNAME.WRAPPER}>
       <div>
         <Image
           width={500}
           height={500}
           alt={topic}
           src={src}
-          className="w-full h-full relative object-cover -z-10"
+          className={CLASSNAME.IMG}
         />
       </div>
-      <div className="text-sm font-bold bg-white absolute top-0 left-1/10 rounded-br-xl rounded-bl-xl p-4">
-        {profit}
-      </div>
-      <div className="w-1/2 absolute left-1/8 bottom-1/10 text-white gap-2 md:gap-6 flex flex-col items-start justify-start text-left">
-        <p className="text-lg">{desc}</p>
-        <h1 className="font-bold md:text-5xl text-2xl">{topic}</h1>
-        <div className="w-3/4 h-3/4 md:w-52 md:h-14 flex flex-col items-center justify-center ml-8">
+      <div className={CLASSNAME.PROFIT}>{profit}</div>
+      <div className={CLASSNAME.CONTAINER}>
+        <p className={CLASSNAME.LG_TEXT}>{desc}</p>
+        <h1 className={CLASSNAME.TOPIC}>{topic}</h1>
+        <div className={CLASSNAME.BUTTON_WRAPPER}>
           <Button typeOfButton={"reset"} variation={"submit"}>
             Get Started
           </Button>

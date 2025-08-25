@@ -8,7 +8,7 @@ export default function RadioBtn({ role, onChange, checked }: Radio) {
       <input
         type="radio"
         id={role}
-        name="role"
+        name={role}
         value={role}
         onChange={(e) => onChange(e.target.value)}
         className={CLASSNAME.DEFAULT}
