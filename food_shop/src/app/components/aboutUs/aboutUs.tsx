@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import RadioBtn from "../radioBtn/radioBtn";
 import AboutUsFrequent from "../aboutUsFrequent/aboutUsFrequent";
@@ -22,11 +22,8 @@ export default function AboutUs() {
     }
   };
 
-  useEffect(() => {
-    console.log("selectedChoise updated:", selectedChoise);
-  }, [selectedChoise]);
   return (
-    <div className="h-full w-full bg-[#D9D9D9] mt-14 pt-10">
+    <div className="h-full w-full bg-[#D9D9D9] mt-14 pb-20 pt-10 mb-10 ">
       <div className="flex items-center justify-around pb-10">
         <h1 className="font-bold text-4xl">Know more about us!</h1>
         <ul className="hidden md:flex">

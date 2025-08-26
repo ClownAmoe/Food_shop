@@ -1,9 +1,12 @@
 "use client";
 
 import { useState } from "react";
+
 import RadioBtn from "../radioBtn/radioBtn";
-import { aboutList } from "./list";
 import AboutUsCard from "../aboutUsCard/aboutUsCard";
+
+import { aboutList } from "./list";
+import { CLASSNAME } from "./classname";
 
 export default function AboutUsFrequent() {
   const content = [
@@ -23,8 +26,8 @@ export default function AboutUsFrequent() {
   };
 
   return (
-    <div className="flex w-[95%] flex-col items-center md:flex-row rounded-xl bg-white p-8 pt-10 h-[525px] ">
-      <ul className="flex flex-col gap-8 justify-center text-sm items-center font-bold w-1/2 whitespace-nowrap text-center md:text-lg">
+    <div className={CLASSNAME.WRAPPER}>
+      <ul className={CLASSNAME.CONTAINER}>
         {content.map((cont) => (
           <li key={cont}>
             <RadioBtn
@@ -35,13 +38,13 @@ export default function AboutUsFrequent() {
           </li>
         ))}
       </ul>
-      <div className="flex flex-col items-center justify-center">
-        <div className="flex flex-col md:flex-row gap-4 h-full mt-8">
+      <div className={CLASSNAME.FLEX}>
+        <div className={CLASSNAME.CONTENT}>
           {aboutList.map(({ name, src, desc }, i) => (
             <AboutUsCard name={name} src={src} desc={desc} key={i} />
           ))}
         </div>
-        <p className="w-full md:w-5/6 text-base mt-4 text-center">
+        <p className={CLASSNAME.TEXT}>
           Order.UK simplifies the food ordering process. Browse through our
           diverse menu, select your favorite dishes, and proceed to checkout.
           Your delicious meal will be on its way to your doorstep in no time!

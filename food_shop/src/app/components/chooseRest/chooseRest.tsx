@@ -29,7 +29,7 @@ export default function ChooseRest() {
   };
 
   return (
-    <div>
+    <div className="w-full">
       <div className={CLASSNAME.WRAPPER}>
         <p className={CLASSNAME.PARAGRAPH}>
           Up to -40% 🎊 Order.uk exclusive deals

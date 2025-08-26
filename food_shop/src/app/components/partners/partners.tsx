@@ -2,7 +2,7 @@ import PartnerCard from "../partnerCard/partnerCard";
 
 export default function Partners() {
   return (
-    <div className="w-full h-fit mt-14 flex flex-col gap-4 md:flex-row">
+    <div className="w-[95%] h-fit mt-14 flex flex-col gap-4 md:flex-row">
       <PartnerCard
         src="/partner/partner1.png"
         topic="Partner with us"

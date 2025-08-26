@@ -6,12 +6,13 @@ import Popular from "./sections/popular/page";
 import Mobile from "./sections/mobile/page";
 import PartnersPage from "./sections/partnersPage/page";
 import AboutUsPage from "./sections/aboutUsPage/aboutUsPage";
+import Stats from "./components/stats/stats";
 
 export default function Home() {
   return (
     <div className="w-full pt-4">
       <Header />
-      <div className="container mx-auto">
+      <div className="mx-auto">
         <Picture />
         <Restaurant />
         <CategoriesSection />
@@ -19,6 +20,7 @@ export default function Home() {
         <Mobile />
         <PartnersPage />
         <AboutUsPage />
+        <Stats />
       </div>
     </div>
   );

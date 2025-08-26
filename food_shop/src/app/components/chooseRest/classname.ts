@@ -1,6 +1,6 @@
 export const CLASSNAME = {
   WRAPPER:
-    "flex flex-col md:flex-row justify-between gap-8 items-center mt-10 w-full",
+    "flex flex-col md:flex-row justify-center gap-8 items-center mt-10 w-[95%] mx-auto",
   PARAGRAPH: "text-3xl ml-2",
   CONTAINER:
     "flex flex-row justify-center md:justify-end gap-0 md:gap-8 w-full text-sm",
