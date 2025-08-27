@@ -7,6 +7,7 @@ import Mobile from "./sections/mobile/page";
 import PartnersPage from "./sections/partnersPage/page";
 import AboutUsPage from "./sections/aboutUsPage/aboutUsPage";
 import Stats from "./components/stats/stats";
+import Footer from "./components/footer/footer";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <AboutUsPage />
         <Stats />
       </div>
+      <Footer />
     </div>
   );
 }

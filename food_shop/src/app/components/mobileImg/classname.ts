@@ -1,6 +1,6 @@
 export const CLASSNAME = {
   WRAPPER:
-    "h-[750px] p-4 rounded-2xl mt-12 md:m-auto md:h-[610px] w-full md:w-[95%] bg-gradient-to-r from-[#EEEEEE] to-[#E0E1DC] border-gray-400 border-2 shadow-2xl flex flex-col-reverse md:flex-row justify-between md:mt-24",
+    "h-[750px] p-4 rounded-2xl mt-10 md:m-auto md:h-[610px] w-full md:w-[95%] bg-gradient-to-r from-[#EEEEEE] to-[#E0E1DC] border-gray-400 border-2 shadow-2xl flex flex-col-reverse md:flex-row justify-between md:mt-24",
   IMG_CONTAINER:
     "items-left -ml-5 md:ml-0 justify-center md:flex flex-col text-lg h-full w-full",
   MAIN_IMG: "mb-10 md:ml-2 md:absolute z-10",

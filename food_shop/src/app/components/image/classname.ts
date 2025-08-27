@@ -1,6 +1,6 @@
 export const CLASSNAME = {
   WRAPPER:
-    "rounded-2xl m-auto h-[350px] w-[95%] py-5 md:py-0 md:h-[610px] md:max-w-[1510px] bg-gradient-to-r from-[#EEEEEE] to-[#E0E1DC] border-gray-400 border-2 shadow-2xl flex flex-row justify-between mt-[25px]",
+    "rounded-2xl m-auto h-[350px] w-[95%] py-5 md:py-0 md:h-[610px] md:max-w-[1510px] bg-gradient-to-r from-[#EEEEEE] to-[#E0E1DC] border-gray-400 border-2 shadow-2xl flex flex-row justify-between mt-10",
   CONTAINER:
     "md:ml-[57px] items-center justify-between md:justify-center flex flex-col text-lg h-full",
   PARAGRAPH: "text-[16px] text-[#03081F]",
