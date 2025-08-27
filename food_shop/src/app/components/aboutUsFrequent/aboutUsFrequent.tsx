@@ -13,7 +13,7 @@ export default function AboutUsFrequent() {
     "How does Order.UK work?",
     "What payment methods are accepted?",
     "Can I track my order in real-time?",
-    "Are there any special discounts or promotions available?",
+    "Are there any special discounts?",
     "Is Order.UK available in my area?",
   ];
 

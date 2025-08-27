@@ -35,3 +35,10 @@ export const importantLinks = [
   { name: "Sign up to deliver", link: "#" },
   { name: "Create a business account", link: "#" },
 ];
+
+export const footerList = [
+  { name: "Privacy Policy", link: "#" },
+  { name: "Terms", link: "#" },
+  { name: "Pricing", link: "#" },
+  { name: "Do not sell or share my personal information", link: "#" },
+];

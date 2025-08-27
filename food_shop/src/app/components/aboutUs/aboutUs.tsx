@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import RadioBtn from "../radioBtn/radioBtn";
 import AboutUsFrequent from "../aboutUsFrequent/aboutUsFrequent";
+import { CLASSNAME } from "./classname";
 
 export default function AboutUs() {
   const [selectedChoise, setSelectedChoise] =
@@ -23,10 +24,10 @@ export default function AboutUs() {
   };
 
   return (
-    <div className="h-full w-full bg-[#D9D9D9] mt-11 md:mt-14 pb-20 pt-10 mb-11 ">
-      <div className="flex items-center justify-around pb-10">
-        <h1 className="font-bold text-4xl">Know more about us!</h1>
-        <ul className="hidden md:flex">
+    <div className={CLASSNAME.WRAPPER}>
+      <div className={CLASSNAME.CONTAINER}>
+        <h1 className={CLASSNAME.TITLE}>Know more about us!</h1>
+        <ul className={CLASSNAME.CHOICES}>
           {choises.map((choice) => (
             <li key={choice}>
               <RadioBtn
@@ -38,7 +39,7 @@ export default function AboutUs() {
           ))}
         </ul>
       </div>
-      <div className="flex items-center justify-center">
+      <div className={CLASSNAME.FREQUENT}>
         <AboutUsFrequent />
       </div>
     </div>

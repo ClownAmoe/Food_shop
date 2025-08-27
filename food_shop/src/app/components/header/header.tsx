@@ -8,7 +8,9 @@ export default function Header() {
   return (
     <div className={CLASSNAME.WRAPPER}>
       <div className={CLASSNAME.IMG_WRAPPER}>
-        <Image src="/header/LOGO.svg" height={50} width={215} alt="Logo" />
+        <a href="#">
+          <Image src="/header/LOGO.svg" height={50} width={215} alt="Logo" />
+        </a>
       </div>
       <ul className={CLASSNAME.NAVBAR}>
         <li>
