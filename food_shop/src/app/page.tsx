@@ -11,7 +11,7 @@ import Footer from "./components/footer/footer";
 
 export default function Home() {
   return (
-    <div className="w-full pt-4">
+    <div className="w-full pt-4 relative">
       <Header />
       <div className="ml-2">
         <Picture />
