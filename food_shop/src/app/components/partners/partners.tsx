@@ -1,8 +1,10 @@
 import PartnerCard from "../partnerCard/partnerCard";
 
+import { CLASSNAME } from "./classname";
+
 export default function Partners() {
   return (
-    <div className="w-[95%] h-fit mt-14 flex flex-col gap-4 md:flex-row">
+    <div className={CLASSNAME.WRAPPER}>
       <PartnerCard
         src="/partner/partner1.png"
         topic="Partner with us"

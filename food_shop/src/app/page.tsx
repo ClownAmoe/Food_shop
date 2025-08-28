@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="w-full pt-4">
       <Header />
-      <div className="mx-auto">
+      <div className="ml-2">
         <Picture />
         <Restaurant />
         <CategoriesSection />

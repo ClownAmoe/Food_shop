@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import RadioBtn from "../radioBtn/radioBtn";
 import AboutUsFrequent from "../aboutUsFrequent/aboutUsFrequent";
+
 import { CLASSNAME } from "./classname";
 
 export default function AboutUs() {

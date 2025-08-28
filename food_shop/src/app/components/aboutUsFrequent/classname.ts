@@ -1,6 +1,6 @@
 export const CLASSNAME = {
   WRAPPER:
-    "flex w-[95%] h-full flex-col items-center md:flex-row rounded-xl bg-white p-8 pt-10 md:h-[525px] ",
+    "flex w-95p h-full flex-col items-center md:flex-row rounded-xl bg-white p-8 pt-10 md:h-[525px] ",
   CONTAINER:
     "flex flex-col gap-8 justify-center text-sm items-center font-bold w-full text-center md:text-lg",
   FLEX: "flex flex-col items-center justify-center",

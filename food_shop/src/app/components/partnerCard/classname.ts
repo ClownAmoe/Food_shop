@@ -1,6 +1,6 @@
 export const CLASSNAME = {
   WRAPPER:
-    "w-full h-full md:w-1/2 bg-red md:h-[425px] rounded-2xl relative bg-gradient-to-tr from-black via-gray to-transparent",
+    "w-full h-full md:w-1/2 bg-red md:h-fit rounded-2xl relative bg-gradient-to-tr from-black via-gray to-transparent",
   IMG: "w-full h-full relative object-cover -z-10",
   PROFIT:
     "text-sm font-bold bg-white absolute top-0 left-1/10 rounded-br-xl rounded-bl-xl p-4",

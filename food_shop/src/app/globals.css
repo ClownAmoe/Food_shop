@@ -1,9 +1,20 @@
 @import "tailwindcss";
-
+/* 
 body {
   background: #fff;
   color: var(--foreground);
   font-family: Poppins, Helvetica, sans-serif;
+} */
+
+@theme {
+  --spacing-95p: 95%;
+  --spacing-610px: 610px;
+
+  --color-image-color: #eeeeee;
+  --color-image-end: #e0e1dc;
+  --color-paragraph-color: #03081f;
+  --color-primary-orange: #fc8a06;
+  --color-main-gray: #d9d9d9;
 }
 
 .swiper-button-next,

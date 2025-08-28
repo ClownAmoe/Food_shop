@@ -13,14 +13,15 @@ import {
   mobileList,
   socialsList,
 } from "./list";
+import { CLASSNAME } from "./classname";
 
 export default function Footer() {
   return (
-    <div className="w-full bg-[#D9D9D9] min-h-96 pt-20">
-      <ul className="flex justify-between flex-col gap-9 md:flex-row px-8 md:px-16">
-        <li className="flex justify-between items-center gap-10 md:gap-4 flex-col">
+    <div className={CLASSNAME.WRAPPER}>
+      <ul className={CLASSNAME.CONTAINER}>
+        <li className={CLASSNAME.CONTENT}>
           <Image src={"/footer/logo2.png"} width={286} height={66} alt="logo" />
-          <div className="flex justify-start">
+          <div className={CLASSNAME.FLEX_START}>
             {mobileList.map(({ link, src }, i) => (
               <a href={link} key={i}>
                 <Image
@@ -28,40 +29,38 @@ export default function Footer() {
                   width={180}
                   height={53}
                   alt="logo"
-                  className="h-full object-contain"
+                  className={CLASSNAME.IMG}
                 />
               </a>
             ))}
           </div>
-          <p className="w-full text-center md:text-left md:w-2/3">
+          <p className={CLASSNAME.PARAGRAPH}>
             Company # 490039-445, Registered with House of companies.
           </p>
         </li>
-        <li className="flex md:items-start items-center flex-col gap-10">
-          <h1 className="text-lg font-bold">
-            Get Exclusive Deals in your Inbox
-          </h1>
-          <div className="w-full h-14 flex items-center justify-between ml-16 md:ml-0">
-            <div className="w-full h-14">
+        <li className={CLASSNAME.SECOND_CONTENT}>
+          <h1 className={CLASSNAME.TITLE}>Get Exclusive Deals in your Inbox</h1>
+          <div className={CLASSNAME.SECOND_CONTAINER}>
+            <div className={CLASSNAME.IMG_WRAPPER}>
               <Input
                 placeholder="youremail@gmail.com"
                 variant="Login"
                 type="email"
               />
             </div>
-            <div className="w-42 h-full mt-4 ml-4">
+            <div className={CLASSNAME.BUTTON_WRAPPER}>
               <Button typeOfButton="submit" variation="submit">
                 Subscribe
               </Button>
             </div>
           </div>
-          <p className="text-sm text-center w-3/4">
+          <p className={CLASSNAME.PARAGRAPH_CENTER}>
             we wont spam, read our{" "}
             <a href="" className="underline">
               email policy
             </a>
           </p>
-          <div className="flex gap-4 justify-between">
+          <div className={CLASSNAME.SOCIALS}>
             {socialsList.map(({ name, src, link }, i) => (
               <Link href={link} key={i}>
                 <Image src={src} alt={name} width={45} height={45} />
@@ -70,31 +69,31 @@ export default function Footer() {
           </div>
         </li>
         <li>
-          <h1 className="mb-4 text-lg font-bold">Legal Pages</h1>
-          <div className="flex flex-col gap-9 text-md">
+          <h1 className={CLASSNAME.HIGH_TITLE}>Legal Pages</h1>
+          <div className={CLASSNAME.LINKS_CONTAINER}>
             {legalLinks.map(({ name, link }, i) => (
-              <a href={link} key={i} className="underline">
+              <a href={link} key={i} className={CLASSNAME.LINK_DECOR}>
                 {name}
               </a>
             ))}
           </div>
         </li>
         <li>
-          <h1 className="mb-4 text-lg font-bold">Important Links</h1>
-          <div className="flex flex-col gap-9 text-md">
+          <h1 className={CLASSNAME.HIGH_TITLE}>Important Links</h1>
+          <div className={CLASSNAME.LINKS_CONTAINER}>
             {importantLinks.map(({ name, link }, i) => (
-              <a href={link} key={i} className="underline">
+              <a href={link} key={i} className={CLASSNAME.LINK_DECOR}>
                 {name}
               </a>
             ))}
           </div>
         </li>
       </ul>
-      <div className="w-full bg-[#03081F] mt-20 h-20 text-white flex items-center  justify-center md:justify-between md:px-24 text-sm">
-        <p className="whitespace-nowrap md:whitespace-normal text-center">
+      <div className={CLASSNAME.BOTTOM_SECTION}>
+        <p className={CLASSNAME.BOTTOM_PARAGRAPH}>
           Order.uk Copyright 2024, All Rights Reserved.
         </p>
-        <div className="md:flex justify-between w-3/6 hidden">
+        <div className={CLASSNAME.HIDDEN_LINKS}>
           {footerList.map(({ name, link }, i) => (
             <a href={link} key={i}>
               {name}

@@ -1,10 +1,11 @@
+import { CLASSNAME } from "./classname";
 import { MiniStatsProps } from "./type";
 
 export default function MiniStats({ nums, desc }: MiniStatsProps) {
   return (
-    <div className="flex flex-col items-center whitespace-nowrap justify-center px-10 text-white border-r-white border-b-1 md:border-b-0 md:border-r-1 last:border-r-0">
-      <h1 className="text-6xl">{nums}+</h1>
-      <p className="text-2xl">{desc}</p>
+    <div className={CLASSNAME.WRAPPER}>
+      <h1 className={CLASSNAME.NUMBERS_TEXT}>{nums}+</h1>
+      <p className={CLASSNAME.SECONDARY_TEXT}>{desc}</p>
     </div>
   );
 }
