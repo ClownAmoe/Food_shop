@@ -10,7 +10,7 @@ export const CLASSNAME = {
   LABEL: "text-sm text-paragraph-color",
   WRAPPER_INPUT:
     "h-12 relative flex flex-row justify-center items-center ml-14",
-  BUTTON_WRAPPER: "h-full w-52 mt-2 -ml-5 z-10",
+  BUTTON_WRAPPER: "h-full w-52 mt-2 -ml-5 z-50",
   IMG_WRAPPER: "md:flex items-end justify-center h-full hidden",
   MAIN_IMG_WRAPPER: "md:flex flex-col justify-end h-full relative hidden",
   IMG_MAIN: "absolute z-10 right-70",

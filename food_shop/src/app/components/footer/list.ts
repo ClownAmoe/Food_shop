@@ -36,6 +36,17 @@ export const importantLinks = [
   { name: "Create a business account", link: "#" },
 ];
 
+export const links = [
+  {
+    name: "Legal Pages",
+    list: legalLinks,
+  },
+  {
+    name: "Important Links",
+    list: importantLinks,
+  },
+];
+
 export const footerList = [
   { name: "Privacy Policy", link: "#" },
   { name: "Terms", link: "#" },

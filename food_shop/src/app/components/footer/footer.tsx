@@ -5,14 +5,9 @@ import Link from "next/link";
 
 import Input from "../input/input";
 import Button from "../button/button";
+import LinksList from "../linksList/linksList";
 
-import {
-  footerList,
-  importantLinks,
-  legalLinks,
-  mobileList,
-  socialsList,
-} from "./list";
+import { footerList, links, mobileList, socialsList } from "./list";
 import { CLASSNAME } from "./classname";
 
 export default function Footer() {
@@ -62,32 +57,17 @@ export default function Footer() {
           </p>
           <div className={CLASSNAME.SOCIALS}>
             {socialsList.map(({ name, src, link }, i) => (
-              <Link href={link} key={i}>
+              <Link href={link} key={name}>
                 <Image src={src} alt={name} width={45} height={45} />
               </Link>
             ))}
           </div>
         </li>
-        <li>
-          <h1 className={CLASSNAME.HIGH_TITLE}>Legal Pages</h1>
-          <div className={CLASSNAME.LINKS_CONTAINER}>
-            {legalLinks.map(({ name, link }, i) => (
-              <a href={link} key={i} className={CLASSNAME.LINK_DECOR}>
-                {name}
-              </a>
-            ))}
-          </div>
-        </li>
-        <li>
-          <h1 className={CLASSNAME.HIGH_TITLE}>Important Links</h1>
-          <div className={CLASSNAME.LINKS_CONTAINER}>
-            {importantLinks.map(({ name, link }, i) => (
-              <a href={link} key={i} className={CLASSNAME.LINK_DECOR}>
-                {name}
-              </a>
-            ))}
-          </div>
-        </li>
+        {links.map(({ name, list }, i) => (
+          <li key={name}>
+            <LinksList name={name} list={list} />
+          </li>
+        ))}
       </ul>
       <div className={CLASSNAME.BOTTOM_SECTION}>
         <p className={CLASSNAME.BOTTOM_PARAGRAPH}>
@@ -95,7 +75,7 @@ export default function Footer() {
         </p>
         <div className={CLASSNAME.HIDDEN_LINKS}>
           {footerList.map(({ name, link }, i) => (
-            <a href={link} key={i}>
+            <a href={link} key={name}>
               {name}
             </a>
           ))}

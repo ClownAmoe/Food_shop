@@ -9,7 +9,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Button from "../button/button";
 
 import { CLASSNAME } from "./classname";
-import { links } from "./list";
+import { links, mobileMenuList } from "./list";
 
 export default function Header() {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
@@ -44,7 +44,7 @@ export default function Header() {
         </li>
       </ul>
       <div>
-        <div className="size-16 mt-2 block md:hidden">
+        <div className={CLASSNAME.BURGER_BUTTON}>
           <Button
             typeOfButton={"submit"}
             variation={""}
@@ -54,31 +54,50 @@ export default function Header() {
           </Button>
         </div>
         {isOpenMenu && (
-          <AnimatePresence>
-            <motion.ul
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3 }}
-              className="ring-2 ring-primary-orange flex flex-col gap-4 rounded-lg absolute h-fit decoration-0 bg-main-gray top-26 right-8 z-50 w-fit p-8"
-            >
-              {links.map(({ title, href }, i) => (
-                <motion.li
-                  key={i}
-                  initial={{ opacity: 0, x: 10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: 10 }}
-                  transition={{ delay: i * 0.05, duration: 0.2 }}
-                  className="border-b-1 border-black"
-                  onClick={toggleMobileMenu}
-                >
-                  <a href={href} className={CLASSNAME.HEADER_TEXT}>
-                    {title}
-                  </a>
-                </motion.li>
-              ))}
-            </motion.ul>
-          </AnimatePresence>
+          <>
+            <motion.div
+              className={CLASSNAME.DARKER}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={toggleMobileMenu}
+            />
+
+            <AnimatePresence>
+              <motion.ul
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+                className={CLASSNAME.MENU_WRAPPER}
+              >
+                <li className={CLASSNAME.MENU_TITLE}>
+                  <Image
+                    width={55}
+                    height={55}
+                    alt="menu"
+                    src={"/header/MenuIcon.svg"}
+                  />
+                  Menu
+                </li>
+                {mobileMenuList.map(({ title, href }, i) => (
+                  <motion.li
+                    key={i}
+                    initial={{ opacity: 0, x: 10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: 10 }}
+                    transition={{ delay: i * 0.05, duration: 0.2 }}
+                    className={CLASSNAME.LINK}
+                    onClick={toggleMobileMenu}
+                  >
+                    <a href={href} className={CLASSNAME.HEADER_TEXT}>
+                      {title}
+                    </a>
+                  </motion.li>
+                ))}
+              </motion.ul>
+            </AnimatePresence>
+          </>
         )}
       </div>
     </div>

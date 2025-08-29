@@ -13,9 +13,6 @@ export const CLASSNAME = {
   BUTTON_WRAPPER: "w-42 h-full mt-4 ml-4",
   PARAGRAPH_CENTER: "text-sm text-center w-3/4",
   SOCIALS: "flex gap-4 justify-start mx-auto w-full md:ml-8",
-  HIGH_TITLE: "mb-4 text-lg font-bold",
-  LINKS_CONTAINER: "flex flex-col gap-9 text-md",
-  LINK_DECOR: "underline",
   BOTTOM_SECTION:
     "w-full bg-paragraph-color mt-20 h-20 text-white flex items-center  justify-center md:justify-between md:px-24 text-sm",
   BOTTOM_PARAGRAPH: "whitespace-nowrap md:whitespace-normal text-center",
