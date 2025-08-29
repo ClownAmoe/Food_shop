@@ -3,7 +3,7 @@ export const CLASSNAME = {
     "h-[750px] p-4 rounded-2xl mt-10 md:m-auto md:h-610px w-full md:w-95p bg-gradient-to-r from-image-color to-image-end border-gray-400 border-2 shadow-2xl flex flex-col-reverse md:flex-row justify-between md:mt-24",
   IMG_CONTAINER:
     "items-left -ml-5 md:ml-0 justify-center md:flex flex-col text-lg h-full w-full",
-  MAIN_IMG: "mb-10 md:ml-2 md:absolute z-10",
+  MAIN_IMG: "mb-10 ml-4 md:ml-2 md:absolute z-10",
   SECOND_IMG: "mb-16 -ml-1 opacity-20 grayscale md:absolute hidden",
   CONTAINER: "flex items-center justify-start w-full flex-col mt-36",
   BLACK_TEXT: "flex flex-row items-center justify-center",

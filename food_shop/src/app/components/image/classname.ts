@@ -15,7 +15,7 @@ export const CLASSNAME = {
   MAIN_IMG_WRAPPER: "md:flex flex-col justify-end h-full relative hidden",
   IMG_MAIN: "absolute z-10 right-70",
   IMG_SECONDARY: "absoulute z-0",
-  ORDER_TOP: "absolute z-50 right-35 top-50 h-36 hidden md:inline",
+  ORDER_TOP: "absolute z-50 right-35 top-56 h-36 hidden md:inline",
   ORDER_MID: "absolute z-50 right-12 top-96 h-36 hidden md:inline",
   ORDER_BOT: "absolute z-50 right-20 top-[570px] h-36 hidden md:inline",
 };

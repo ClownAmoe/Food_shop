@@ -8,6 +8,7 @@ import Restaurants from "../restaurants/restaurants";
 import { rests } from "./rests";
 import { objProp } from "../restaurants/type";
 import { CLASSNAME } from "./classname";
+import Dropdown from "../dropdown/dropdown";
 
 export default function ChooseRest() {
   const roles = ["All", "Vegan", "Sushi", "Pizza & Fast food", "Others"];
@@ -34,6 +35,9 @@ export default function ChooseRest() {
         <p className={CLASSNAME.PARAGRAPH}>
           Up to -40% 🎊 Order.uk exclusive deals
         </p>
+        <p className={CLASSNAME.PARAGRAPH_MOBILE}>
+          Up to -40% Discount Offers 🎊
+        </p>
         <ul className={CLASSNAME.CONTAINER}>
           {roles.map((role) => (
             <li key={role}>
@@ -45,6 +49,13 @@ export default function ChooseRest() {
             </li>
           ))}
         </ul>
+        <div className="md:hidden block w-full -mb-6">
+          <Dropdown
+            name={"Pizza & Fast Food"}
+            options={roles}
+            change={handleRoleChange}
+          />
+        </div>
       </div>
 
       <div className={CLASSNAME.RESTAURANT_WRAPPER}>
