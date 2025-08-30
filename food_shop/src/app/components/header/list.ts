@@ -1,8 +1,8 @@
 export const links = [
-  { title: "Home", href: "#" },
-  { title: "Special Offers", href: "#" },
-  { title: "Restaurants", href: "#" },
-  { title: "Track Order", href: "#" },
+  { title: "Home", href: "/" },
+  { title: "Special Offers", href: "/offers" },
+  { title: "Restaurants", href: "/restaurants" },
+  { title: "Track Order", href: "/tracking" },
 ];
 
 export const mobileMenuList = [

@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 import { useState } from "react";
 
@@ -13,6 +14,7 @@ import { links, mobileMenuList } from "./list";
 
 export default function Header() {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
+  const pathName = usePathname();
 
   const toggleMobileMenu = () => {
     setIsOpenMenu(!isOpenMenu);
@@ -21,14 +23,21 @@ export default function Header() {
   return (
     <div className={CLASSNAME.WRAPPER}>
       <div>
-        <a href="#">
+        <a href="/">
           <Image src="/header/LOGO.svg" height={50} width={215} alt="Logo" />
         </a>
       </div>
       <ul className={CLASSNAME.NAVBAR}>
         {links.map(({ title, href }, i) => (
           <li key={i}>
-            <a href={href} className={CLASSNAME.HEADER_TEXT}>
+            <a
+              href={href}
+              className={
+                pathName === href
+                  ? CLASSNAME.HEADER_TEXT_CHOSEN
+                  : CLASSNAME.HEADER_TEXT
+              }
+            >
               {title}
             </a>
           </li>
@@ -39,7 +48,7 @@ export default function Header() {
             variation="login"
             image="header/Male User.svg"
           >
-            Log in
+            Login/Signup
           </Button>
         </li>
       </ul>
@@ -53,6 +62,7 @@ export default function Header() {
             <Image width={65} height={65} alt="menu" src={"/header/Menu.svg"} />
           </Button>
         </div>
+
         {isOpenMenu && (
           <>
             <motion.div
