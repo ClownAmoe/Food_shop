@@ -4,10 +4,10 @@ import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css";
 
-import RestaurantCard from "../restaurontCard/restaurantCard";
-import { arrProp } from "../restaurantsList/type";
+import RestaurantCard from "@/app/components/restaurontCard/restaurantCard";
+import { arrProp } from "@/app/components/restaurantsList/type";
 
-export default function Restaurants({ arr }: arrProp) {
+export default function RestaurantsList({ arr }: arrProp) {
   return (
     <div className="w-full">
       <Swiper
@@ -20,7 +20,7 @@ export default function Restaurants({ arr }: arrProp) {
           300: { slidesPerView: 1 },
         }}
       >
-        {arr.map((e) => {
+        {arr.map((e: any) => {
           return (
             <SwiperSlide key={e.name}>
               <RestaurantCard

@@ -1,4 +1,4 @@
-import PartnerCard from "../partnerCard/partnerCard";
+import PartnerCard from "@/app/components/partnerCard/partnerCard";
 
 import { CLASSNAME } from "./classname";
 

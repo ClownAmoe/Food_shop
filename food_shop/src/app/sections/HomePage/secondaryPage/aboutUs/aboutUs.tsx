@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 
-import RadioBtn from "../radioBtn/radioBtn";
-import AboutUsFrequent from "../aboutUsFrequent/aboutUsFrequent";
+import RadioBtn from "@/app/components/radioBtn/radioBtn";
+import AboutUsFrequent from "@/app/components/aboutUsFrequent/aboutUsFrequent";
 
 import { CLASSNAME } from "./classname";
 

@@ -5,7 +5,8 @@ import "swiper/css/navigation";
 import "swiper/css";
 
 import RestaurantCard from "../restaurontCard/restaurantCard";
-import { arrProp } from "../restaurantsList/type";
+
+import { arrProp } from "./type";
 
 export default function Restaurants({ arr }: arrProp) {
   return (

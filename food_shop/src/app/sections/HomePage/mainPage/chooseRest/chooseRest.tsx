@@ -2,13 +2,13 @@
 
 import { useEffect, useState } from "react";
 
-import RadioBtn from "../radioBtn/radioBtn";
-import Restaurants from "../restaurants/restaurants";
+import RadioBtn from "../../../../components/radioBtn/radioBtn";
+import Restaurants from "../../../../components/restaurantsList/restaurants";
 
 import { rests } from "./rests";
-import { objProp } from "../restaurants/type";
+import { objProp } from "../../../../components/restaurantsList/type";
 import { CLASSNAME } from "./classname";
-import Dropdown from "../dropdown/dropdown";
+import Dropdown from "../../../../components/dropdown/dropdown";
 
 export default function ChooseRest() {
   const roles = ["All", "Vegan", "Sushi", "Pizza & Fast food", "Others"];

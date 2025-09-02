@@ -1,4 +1,4 @@
-import MiniCard from "../miniCard/miniCard";
+import MiniCard from "@/app/components/miniCard/miniCard";
 
 import { cates } from "./cates";
 import { CLASSNAME } from "./classnames";

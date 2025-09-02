@@ -5,7 +5,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 
-import MiniCard from "../miniCard/miniCard";
+import MiniCard from "../../../../components/miniCard/miniCard";
 import { CLASSNAME } from "./classname";
 
 import { restaurants } from "./popular";
